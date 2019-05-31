@@ -1,9 +1,11 @@
 
 
-#### working dApp
-https://play.google.com/store/apps/details?id=com.blocery  (for Android)
+### dApp
 
 http://blocery.com (for iPhone)
+
+https://play.google.com/store/apps/details?id=com.blocery  (for Android)
+
 
 #### website for information
 
