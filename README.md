@@ -2,9 +2,9 @@
 
 ### dApp
 
-http://blocery.com (for iPhone)
-
 https://play.google.com/store/apps/details?id=com.blocery  (for Android)
+
+http://blocery.com (for iPhone)
 
 
 #### website for information
