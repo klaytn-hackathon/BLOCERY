@@ -1,14 +1,13 @@
-# blocery Alpha-Service
-
-Blocery is a Blockchain based e-commerce platform of pre-harvest agricultural products.  
-
-http://blocery.io 
 
 
-#### dApp
+#### working dApp
 https://play.google.com/store/apps/details?id=com.blocery  (for Android)
 
 http://blocery.com (for iPhone)
+
+#### website for information
+
+http://blocery.io 
 
 
 ### FrontEnd (react.js)
