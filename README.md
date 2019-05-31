@@ -7,11 +7,6 @@ https://play.google.com/store/apps/details?id=com.blocery  (for Android)
 http://blocery.com (for iPhone)
 
 
-#### website for information
-
-http://blocery.io 
-
-
 ### FrontEnd (react.js)
 
 1. npm 설치. https://nodejs.org/en/ ⇒  LTS버전 설치
