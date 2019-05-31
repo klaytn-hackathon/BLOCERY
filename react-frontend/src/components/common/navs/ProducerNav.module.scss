@@ -1,0 +1,30 @@
+@import "Color.module.scss";  //src 의 styles 폴더를 의미 : 상세한 내용은 paths.js 의 styles 변수를 webpack.config.js 에서 sass-loader 에서 사용한다
+@import "Text.module.scss";
+//$textBolds : 900;
+//$textSize: small;
+
+.wrap{
+  display: flex;
+  //height: 2.5em;
+  width: 100%;
+  flex-wrap: nowrap;
+  overflow: auto;
+  background: white;
+  position: fixed;
+  border-bottom: 1px solid $color-info-light;
+  z-index: 99;
+}
+
+.wrap > div{
+  font-size: $textLarge;
+  font-weight: $textBoldMedium;
+  padding: 0.3em 0.6em;
+  flex-shrink: 0; //0은 창 크기에 따라 동적으로 width가 줄어들지 않게함 => 이로써 부모의 overflow 가 동작함(가로스크롤)
+  color: $color-info;
+}
+
+.wrap > div.active{
+  //font-weight: 900;
+  font-weight: $textBoldLarge;
+  border-bottom: 2px $color-info solid;
+}

@@ -1,0 +1,56 @@
+//배경
+.wrap {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.3) ;
+  z-index:99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  //모달
+  & .modal{
+    background: white;
+    flex-grow: 1;
+    animation-name: modalAni;
+    animation-duration: .3s;
+    //헤더
+    & header {
+      display: flex;
+
+      //타이틀
+      & > div:nth-child(1) {
+        padding: 1em;
+        text-align: left;
+        flex-grow: 1;
+        font-weight: 500;
+      }
+      //X 아이콘
+      & > div:nth-child(2) {
+        padding: 1em;
+      }
+    }
+
+    & figure {
+      padding: 0em 1em 1em 1em;
+      max-height: 35em;
+      overflow: auto;
+    }
+
+    //props.noPadding 일 경우
+    & .noPadding {
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+
+
+@keyframes modalAni {
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}

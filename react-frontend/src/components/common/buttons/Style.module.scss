@@ -1,0 +1,7 @@
+@import "Color.module.scss";
+
+//달력과 겹칠 경우 위로 뜰 수 있게함
+.wrap{
+    z-index: 0;
+}
+

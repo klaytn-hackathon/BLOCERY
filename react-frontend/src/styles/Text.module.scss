@@ -1,0 +1,121 @@
+@import "Color.module.scss"; //콜론 필수.
+
+$textSmall: small;
+$textMedium: medium;
+$textLarge: large;
+
+$textBoldMedium: 600;
+$textBoldLarge: 900;
+
+
+
+.textCenter {
+  text-align: center;
+}
+
+.textInfoC {
+  text-align: center;
+  color: $color-info;
+}
+
+.textRight {
+  text-align: right;
+}
+
+.textSmall {
+  font-size: small;
+}
+.textMedium {
+  font-size: medium;
+}
+.textLarge {
+  font-size: large;
+}
+
+.textBoldMedium {
+  font-weight: 600;
+}
+.textBoldLarge {
+  font-weight: 900;
+}
+
+.textSmallL {
+  font-size: small;
+  text-align: left;
+}
+
+.textSmallR {
+  font-size: small;
+  text-align: right;
+}
+
+.textBoldS {
+  font-size: small;
+  font-weight: bold;
+}
+
+//right small,  text-small = 그냥 small 임
+.textRs {
+  text-align: right;
+  font-size: small;
+}
+
+
+//Line-through Text small
+.textLineS {
+  font-size: small;
+  text-decoration-line: line-through;
+}
+
+.textLineR {
+  text-decoration-line: line-through;
+  text-align: right;
+}
+
+.textLineRs {
+  font-size: small;
+  text-decoration-line: line-through;
+  text-align: right;
+}
+
+.textNoti {
+  color: $color-noti;
+}
+
+.textNotiR {
+  text-align: right;
+  color: $color-noti;
+}
+
+.textNotiS {
+  font-size: small;
+  color: $color-noti;
+}
+
+.textNotiL {
+  text-align: left;
+  color: $color-noti;
+}
+
+.textNotiLs {
+  text-align: left;
+  font-size: small;
+  color: $color-noti;
+}
+
+.textNotiRs {
+  text-align: right;
+  font-size: small;
+  color: $color-noti;
+}
+
+.textWarningR {
+  text-align: right;
+  color: $color-warning; //red
+}
+
+.textWarningRs {
+  text-align: right;
+  font-size: small;
+  color: $color-warning; //red
+}

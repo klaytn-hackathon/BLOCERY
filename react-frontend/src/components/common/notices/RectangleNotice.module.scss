@@ -1,0 +1,13 @@
+@import 'Color.module.scss';
+
+.wrap {
+  background-color: $color-secondary-light;
+  //border: 1px solid $color-secondary-light-border;
+  padding: 1em 1.3em;
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+
+.wrap a {
+  color: black;
+}

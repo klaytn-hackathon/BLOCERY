@@ -1,0 +1,208 @@
+.wrap{
+
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+$color-info: #17a2b8;       //블로서리 기본색
+$color-info-dark: #13879a;
+$color-info-light: #13aabd;
+//$color-gray: gray;
+$color-gray-light: #aeaeae;
+$contant-padding: 20px;     //본문 패딩
+$color-light: #f1f1f1;      //묽은 회색
+$color-sharp-tag: #0b4e59;  //해시태그
+$color-warning: #ffc107;
+
+//이미지 컨테이너
+.container-goods-img{
+  position: relative;
+  height: 250px;
+  background-color: #8dd3dc;
+}
+//큰 이미지
+.container-goods-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+//큰 이미지의 왼쪽, 오른쪽 버튼
+.container-goods-img .btn-back, .btn-next{
+  position: absolute;
+  color: white;
+}
+//왼쪽 버튼
+.container-goods-img .btn-back{
+  top: 50%;
+  left: 30px;
+}
+//오른쪽 버튼
+.container-goods-img .btn-next{
+  top: 50%;
+  right: 30px;
+}
+
+
+//썸네일 컨테이너
+.container-goods-img-list{
+  display: flex;
+  height: 80px;
+  overflow: auto;
+  background-color: $color-light;
+}
+
+//썸네일 이미지
+.container-goods-img-list img{
+  width: 80px;
+  height: 100%;
+  padding: 1px;
+  object-fit: cover;
+
+}
+//썸네일 이미지가 active 되었을경우
+.container-goods-img-list img.active{
+  border: 2px cornflowerblue solid;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+
+
+  animation-name: thumbnailClicked;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+}
+//썸네일 이미지가 active 되었을경우 animation
+@keyframes thumbnailClicked{
+  from{
+
+  }
+  to{
+    object-position: 100% 0;
+  }
+}
+
+//썸네일 이미지를 클릭 했을 경우
+.container-goods-img-list img:active{
+  opacity: 0.5;
+}
+
+//생산자 및 원산지 정보
+.container-goods-trace{
+
+}
+
+//상품정보, 상품설명, 구매안내, 재배일지, 후기
+
+.container-goods,
+.container-goods-trace,
+.container-goods-detail,
+.container-goods-purcase-info,
+.container-goods-farm-diary,
+.container-goods-review
+{
+  position: relative;
+  padding: $contant-padding;
+  min-height: 100px;
+}
+
+.sharp-tag{
+  margin-top: 10px;
+  color: $color-sharp-tag;
+  font-size:10pt;
+  //background-color: $color-light;
+}
+
+//share 아이콘
+.container-goods .share{
+  position: absolute;
+  margin-top: 26px;
+  right: 20px;
+  background-color: #1697ae;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  padding-top: 6px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px grey;
+}
+.container-goods .share:active{
+  background-color: #8dd3dc;
+}
+
+//가로 라인
+.hor-line-sm, .hor-line-lg{
+  background-color: $color-info;
+}
+
+//가로라인 (sm)
+.hor-line-sm{
+  height: 1px;
+  opacity: 0.3;
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+//가로라인 (lg)
+.hor-line-lg{
+  height: 10px;
+}
+
+
+
+//기본정보
+table {
+  width: 100%;
+  border-top: 1px grey solid;
+  border-collapse: collapse;
+
+}
+td {
+  border-bottom: 1px grey solid;
+  padding: 10px;
+  font-size: 10pt;
+}
+table .title{
+  background-color: $color-light;
+}
+
+//상품설명 구매안내 재배일지 후기 탭
+.tab-sticky{
+  position: -webkit-sticky;
+  position: sticky;
+  display: flex;
+  background-color: $color-info-light;
+  color: white;
+  z-index:99;
+  align-items: center;
+}
+.tab-sticky > a{
+  flex-grow: 1;
+  //border: 1px solid black;
+  font-size: 12pt;
+  padding: 5px;
+  text-align: center;
+}
+.tab-sticky > a.active{
+  background-color: $color-info-dark;
+}
+
+.buy {
+  display: flex;
+  //align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  padding: 5px;
+  bottom: 0px;
+  z-index: 9999;
+  width: 100%;
+}
+  .buy > div{
+    flex-grow: 1;
+    //margin: 5px;
+    padding: 5px;
+  //height: 46px;
+}

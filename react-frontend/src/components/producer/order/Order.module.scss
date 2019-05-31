@@ -1,0 +1,21 @@
+@import 'Color.module.scss';
+.wrap {
+  //주문번호 박스
+  & .orderBox {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0.5em;
+    font-weight: 500;
+    margin-bottom: 1em;
+  }
+  //운송정보 기입 박스
+  & .invoiceBox {
+    border: 1px gray solid;
+    border-radius: 0.3rem;
+    padding: 0.75rem;
+
+  }
+  & b {
+    font-weight: 400;
+  }
+}

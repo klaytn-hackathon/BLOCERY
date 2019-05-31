@@ -1,0 +1,59 @@
+@import "Color.module.scss";  //src 의 styles 폴더를 의미 : 상세한 내용은 paths.js 의 styles 변수를 webpack.config.js 에서 sass-loader 에서 사용한다
+.wrap{
+  position: relative;
+}
+
+.success{
+  //color: $color-info;
+}
+
+.footer{
+  position: fixed;
+  text-align: center;
+  bottom:0px;
+  background-color: white;
+  width: 100%;
+  height: 50px;
+  padding: 0.5em;
+  box-shadow: 1px 1px 10px $color-shadow;
+}
+
+.wrap footer > button{
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+.badge {
+  position: fixed;
+  top: 0.2em;
+  right: 0.2em;
+}
+
+//.wrap{
+//  background-color: $color-info;
+//  padding: 10px;
+//  & > div:nth-child(1){
+//    background-color: #8dd3dc;
+//  }
+//  &:hover{
+//    background-color: $color-warning;
+//  }
+//  //styles.item
+//  //& .item{  //&뒤에 띄워쓰기 해야 먹힘
+//  //  background-color: white;
+//  //}
+//}
+
+//styles.item
+//.item{
+//  background-color: white;
+//}
+
+//styles.item
+//.wrap .item{
+//  background-color: white;
+//}
+//
+//.wrap section{
+//  background-color: yellow;
+//}

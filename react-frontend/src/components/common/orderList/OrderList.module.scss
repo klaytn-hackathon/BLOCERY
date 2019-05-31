@@ -1,0 +1,77 @@
+@import "Color.module.scss";
+@import "Text.module.scss";
+$padding: .3em;
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  padding: $padding;
+  //border: 1px gray solid;
+  background: whitesmoke;
+  border-top: 1px gainsboro solid;
+}
+.header {
+  padding: $padding;
+  //background: #d9d9d9;
+}
+.sectionDate{
+  display: flex;
+  flex-direction: row;
+  padding: $padding;
+}
+.sectionDate > div {
+  flex-basis: 50%;
+}
+.sectionDate > div:nth-child(1){
+  text-align: left;
+}
+.sectionDate > div:nth-child(2){
+  text-align: right;
+}
+
+.sectionContent {
+  display: flex;
+  font-size: small;
+}
+.sectionContent .img{
+  flex-basis: 8em;
+  flex-shrink: 0;
+  //width: 100px;
+}
+.sectionContent .content{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.sectionContent > div {
+  padding: $padding;
+}
+
+.sectionContent .content > div:nth-child(1) {
+}
+.sectionContent .content > div:nth-child(2) {
+}
+.sectionContent .content > div:nth-child(3) {
+  flex-basis: 10px;
+}
+.orderDetail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 1em;
+  flex-shrink: 0;
+}
+
+.goodsImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.noneResult {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}

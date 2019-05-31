@@ -1,0 +1,30 @@
+@import "Color.module.scss";
+
+.wrap{
+  display: flex;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  right: 0;
+  bottom:0;
+  background: white;
+}
+.wrap > section{
+  flex-basis: 25%;
+  flex-grow: 1;
+  flex-shrink: 0;
+  height: 70px;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  border: 1px solid whitesmoke;
+}
+
+.wrap div{
+  text-align: center;
+  font-size: 1rem;
+}
+
+.wrap div.active{
+  font-weight: bold;
+}

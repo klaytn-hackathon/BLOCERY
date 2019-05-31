@@ -1,0 +1,43 @@
+@import "Color.module.scss";
+@import "Text.module.scss";
+
+.card {
+  text-align: center;
+  border: 1px solid gray;
+  margin: 0.5em;
+  border-radius: 1em;
+}
+
+.card > div {
+  padding: 0.4em;
+}
+
+.percentage {
+  font-weight: bold;
+  font-size: 14px;
+  background: gray;
+  color: white;
+  border-top-left-radius: 0.6em;
+  border-top-right-radius: 0.6em;
+}
+.date {
+  font-size: 12px;
+  color: gray;
+}
+.price {
+  font-weight:bold;
+  font-size: 14px;
+  color: gray;
+}
+
+.card.active {
+  border: 2px solid $color-info;
+
+  & .percentage{
+    background: $color-info;
+    color: white;
+  }
+  & .date, .price {
+    color: #383838;
+  }
+}

@@ -1,0 +1,50 @@
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.scrolling-wrapper .rec-card {
+  display: inline-block;
+}
+.scrolling-wrapper-flexbox {
+  display: flex;
+  flex-wrap: nowrap;  //밑으로 안 떨어뜨리기
+  overflow-x: auto;
+  justify-content: center;
+}
+.scrolling-wrapper-flexbox .rec-card {
+  flex: 0 0 auto;
+  margin-right: 3px;
+  color: #1697ae;
+  border-radius: 5px;
+}
+
+.scrolling-wrapper-flexbox .rec-card.active{
+  border: 1px #8dd3dc solid;
+}
+
+//카드
+.rec-card {
+  border: 1px solid whitesmoke;
+  width: 100px;
+  height: 70px;
+  color: #1697ae;
+  background: white;
+  text-align: center;
+  padding: 10px;
+}
+
+//카드 글자
+.rec-card div {
+  padding-top: 2px;
+  font-size: 10pt;
+}
+
+.scrolling-wrapper, .scrolling-wrapper-flexbox {
+  height: 75px;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+.scrolling-wrapper::-webkit-scrollbar, .scrolling-wrapper-flexbox::-webkit-scrollbar {
+  display: none;
+}

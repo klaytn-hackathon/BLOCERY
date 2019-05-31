@@ -1,0 +1,10 @@
+.wrap{
+  & table {
+    font-size: 12px;
+  }
+  & td:nth-child(1) {
+    width: 11em;
+  }
+}
+
+

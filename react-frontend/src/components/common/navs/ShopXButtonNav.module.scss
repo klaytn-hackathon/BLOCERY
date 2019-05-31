@@ -1,0 +1,14 @@
+@import "Color.module.scss";
+.wrap{
+  height: 44px;
+  display: flex;
+  background: $color-info;
+  color: white;
+  align-items: center;
+}
+.name{
+  font-size: 1.2em;
+  flex-grow: 1;
+  text-align: center;
+  flex-grow: 1;
+}

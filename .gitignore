@@ -1,0 +1,15 @@
+/.idea/
+/.gradle/
+/chain.iml
+.DS_Store
+*/.DS_Store
+/react-frontend/build/
+/react-frontend/node_modules/
+/springboot-backend/build/
+/springboot-backend/out/
+/truffle/build/
+/truffle/node_modules/
+/blocery-images/
+/blocery-thumbnails/
+/userPhone/android
+/userPhone/ios

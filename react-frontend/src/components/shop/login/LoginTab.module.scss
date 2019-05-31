@@ -1,0 +1,39 @@
+@import 'Color.module.scss';
+.bottomContainer {
+  display: flex;
+  justify-content: center;
+  & > div {
+    border: 1px whitesmoke solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    width:6em;
+    height:6em;
+    margin: 0 0.6em;
+  }
+  & > div > div {
+    text-align: center;
+  }
+  & :hover {
+      background: $color-info-light;
+      color: white;
+      font-weight: 600;
+  }
+}
+
+.wrap {
+  & button {
+    border-radius: 20em;
+  }
+  & .textBox {
+    border: 0;
+    border-bottom: 2px solid gray;
+    height: 3em;
+    background-color: whitesmoke;
+  }
+  & h5 {
+    color: gray;
+  }
+}

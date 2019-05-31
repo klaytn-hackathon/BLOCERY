@@ -1,0 +1,70 @@
+@import "Color.module.scss";
+@import "Text.module.scss";
+
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  background-size: cover;
+  overflow: auto;
+}
+
+.card{
+  flex-basis: 50%;
+  height: 15em;
+  background-color: #8dd3dc;
+  position: relative;
+  text-align: left;
+  border: 1px white solid;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 0.3em;
+}
+.image{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  //border-radius: 0.3em;
+  object-fit: cover;
+}
+.icon, .textWrap{
+  z-index: 999;
+}
+.date {
+  position: absolute;
+  top:0;
+  z-index: 999;
+  color: white;
+  margin:0.2em;
+  padding:0.1em;
+  text-shadow: 1px 1px black;
+}
+.card .icon{
+  position: absolute;
+  //max-width: 2.44em;
+  top: 0;
+  right: 0;
+  padding: .5em;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px white solid;
+  margin:0.2em;
+  -webkit-border-radius: 0.4em;
+  -moz-border-radius: 0.4em;
+  border-radius: 0.4em;
+  color: $color-info;
+}
+
+.card .textWrap{
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  background: rgba(255, 255, 255, .9);
+  padding: .7em;
+  color: #2a2a2a;
+}
+
+.textWrap{
+  font-size: 12px;
+  min-height: 6.4em;
+}

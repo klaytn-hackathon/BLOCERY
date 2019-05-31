@@ -1,0 +1,97 @@
+@import "Color.module.scss";
+@import "Text.module.scss";
+
+$border-radius: 0.5em;
+.wrap {
+  display: flex;
+  flex-direction: column;
+  padding: 0em 1.3em 1.3em 1.3em;
+}
+.card {
+  //margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  flex-grow:1;
+  -webkit-border-radius: $border-radius;
+  -moz-border-radius: $border-radius;
+  border-radius: $border-radius;
+  box-shadow: 2px 2px 8px #969696;
+}
+
+.imageBox {
+  position: relative;
+  height: 24em;
+}
+
+.imageBox img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+}
+.superPriceLayer {
+  display: flex;
+  flex-direction:column;
+  position: absolute;
+  font-weight: 500;
+  top: 0.5em;
+  right: 0.5em;
+  color: white;
+  background: $color-info;
+  padding: 0.3em 0.7em;
+  border-radius: 0.3em;
+}
+.superPriceLayer > div{
+  text-align: center;
+}
+.superPriceLayer > div:nth-child(1){
+  font-size: 1em;
+}
+.superPriceLayer > div:nth-child(2){
+  font-size: 2em;
+  font-weight: bold;
+}
+.soldOut {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0, 0.5);
+
+  & > div:nth-child(1) {
+    color: white;
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  & > div:nth-child(2) {
+    color: white;
+    font-size: 1rem;
+    opacity: 0.8;
+  }
+}
+
+.dDayLayer{
+  //position: absolute;
+  //left: 2em;
+  //top: 0.4em;
+}
+.card footer{
+  display: flex;
+  flex-direction: column;
+  padding: 0.6em;
+  color: whitesmoke;
+  background-color: $color-info;
+  border-bottom-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+}
+.card footer > div:nth-child(1){
+  font-size:1em;
+}
+.card footer > div:nth-child(2){
+  font-size:1.5em;
+  font-weight: $textBoldMedium;
+}

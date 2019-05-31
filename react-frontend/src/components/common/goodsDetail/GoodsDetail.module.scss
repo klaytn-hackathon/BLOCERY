@@ -1,0 +1,260 @@
+@import "Color.module.scss";
+@import "Text.module.scss";
+
+.wrap{
+  font-size: 1rem;
+}
+.wrap *{
+  outline: none !important;
+}
+//html{
+//  scroll-behavior: inherit;
+//}
+
+//$color-info: #17a2b8;       //블로서리 기본색
+$color-info-dark: #13879a;
+$color-info-light: #13aabd;
+//$color-gray: gray;
+$color-gray-light: #aeaeae;
+$contant-padding: 1rem;     //본문 패딩
+$color-light: #f1f1f1;      //묽은 회색
+$color-sharp-tag: #0b4e59;  //해시태그
+$color-warning: #ffe000;
+
+$text-margin: 0.3em;
+
+////이미지 컨테이너
+//.containerGoodsImg{
+//  position: relative;
+//  height: 250px;
+//  background-color: #8dd3dc;
+//}
+////큰 이미지
+//.containerGoodsImg img{
+//  width: 100%;
+//  height: 100%;
+//  object-fit: cover;
+//}
+//
+////큰 이미지의 왼쪽, 오른쪽 버튼
+//.containerGoodsImg .btnBack, .btnNext{
+//  position: absolute;
+//  color: white;
+//}
+////왼쪽 버튼
+//.containerGoodsImg .btnBack{
+//  top: 50%;
+//  left: 30px;
+//}
+////오른쪽 버튼
+//.containerGoodsImg .btnNext{
+//  top: 50%;
+//  right: 30px;
+//}
+//
+//
+////썸네일 컨테이너
+//.containerGoodsImgList{
+//  display: flex;
+//  height: 80px;
+//  overflow: auto;
+//  background-color: $color-light;
+//}
+//
+////썸네일 이미지
+//.containerGoodsImgList img{
+//  width: 80px;
+//  height: 100%;
+//  padding: 1px;
+//  object-fit: cover;
+//
+//}
+////썸네일 이미지가 active 되었을경우
+//.containerGoodsImgList img.active{
+//  border: 2px cornflowerblue solid;
+//  -webkit-border-radius: 10px;
+//  -moz-border-radius: 10px;
+//
+//
+//  animation-name: thumbnailClicked;
+//  -webkit-animation-duration: 1s;
+//  -moz-animation-duration: 1s;
+//  -o-animation-duration: 1s;
+//  animation-duration: 1s;
+//}
+////썸네일 이미지가 active 되었을경우 animation
+//@keyframes thumbnailClicked{
+//  from{
+//
+//  }
+//  to{
+//    object-position: 100% 0;
+//  }
+//}
+//
+////썸네일 이미지를 클릭 했을 경우
+//.containerGoodsImgList img:active{
+//  opacity: 0.5;
+//}
+
+//생산자 및 원산지 정보
+.containerGoodsTrace{
+
+}
+
+//상품정보, 상품설명, 구매안내, 재배일지, 후기
+
+.containerGoods,
+.containerGoodsTrace,
+.containerGoodsDetail,
+.containerGoodsPurcaseInfo,
+  //.containerGoodsFarmDiary,
+.containerGoodsReview
+{
+  position: relative;
+  padding: $contant-padding;
+  min-height: 100px;
+}
+
+
+.containerGoods > div{
+  margin: $text-margin 0rem;
+}
+
+.sharpTag{
+  //margin-top: 10px;
+  color: $color-sharp-tag;
+  //font-size:10pt;
+  //background-color: $color-light;
+}
+
+//가로 라인
+.horLineSm, .horLineLg{
+  background-color: $color-info;
+}
+
+//가로라인 (sm)
+.horLineSm{
+  height: 1px;
+  opacity: 0.3;
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+//가로라인 (lg)
+.horLineLg{
+  height: 10px;
+}
+
+
+
+//기본정보
+.table {
+  width: 100%;
+  border-top: 1px grey solid;
+  border-collapse: collapse;
+
+}
+.table td {
+  border-bottom: 1px grey solid;
+  padding: 10px;
+  font-size: smaller;
+}
+.table .title{
+  background-color: $color-light;
+}
+
+//상품설명 구매안내 재배일지 후기 탭
+.tabSticky{
+  position: -webkit-sticky;
+  position: sticky;
+  display: flex;
+  background-color: $color-info-light;
+  color: white;
+  z-index:99;
+  align-items: center;
+}
+.tabSticky > a{
+  flex-grow: 1;
+  //border: 1px solid black;
+  font-size: 12pt;
+  padding: 5px;
+  text-align: center;
+}
+.tabSticky > a.active{
+  background-color: $color-info-dark;
+}
+
+.buy {
+  display: flex;
+  //align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  padding: 5px;
+  bottom: 0px;
+  z-index: 99;
+  width: 100%;
+}
+.buy > div{
+  flex-grow: 1;
+  //margin: 5px;
+  padding: 5px;
+  //height: 46px;
+}
+
+.contentImage {
+  width: 100%;
+  height: 100%
+}
+
+//16px
+.title,.price {
+  font-size: 16px;
+}
+
+//14px
+.time, .boughtCnt, .sharpTag,
+.containerGoodsPurcaseInfo > p,
+.containerGoodsReview > p
+{
+  font-size: 14px;
+}
+
+
+//12px
+.table td,
+.containerGoodsPurcaseInfo > p //구매안내
+{
+  font-size: 12px;
+}
+
+//bold
+.bold {
+  font-weight: bold;
+}
+
+.space {
+  padding: 0.15em;
+}
+
+
+
+//
+//.wrap2 figure.active{
+//  background: $color-info;
+//  //font-weight: bold;
+//  //font-size: 1.2em;
+//}
+//
+//.wrap2 .box.active{
+//  border: 3px solid $color-info;
+//}
+//
+
+
+
+.goodsPriceCardWrap {
+  display: flex;
+  font-size: 0.8em;
+  justify-content: center;
+}

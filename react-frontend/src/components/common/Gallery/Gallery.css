@@ -1,0 +1,18 @@
+.gallery-flex{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+/*.flex-gallery svg{*/
+    /*top:0;*/
+/*}*/
+
+.gallery-flex > div {
+    /*border: 1px cadetblue solid;*/
+    padding: 1px;
+}
+.gallery-flex img{
+    margin: 2px;
+    border: 1px #cccccc solid;
+}
